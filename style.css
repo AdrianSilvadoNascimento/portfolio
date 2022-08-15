@@ -14,14 +14,19 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #52b69a;
   z-index: 1000;
 }
 
 #main-bar h1 {
   text-align: center;
   font-size: 3em;
-  color: #168aad;
+  font-weight: bold;
+  color: #F1FAEE;
+}
+
+.first-letter {
+  color: #52b69a;
 }
 
 #idade {
@@ -32,12 +37,12 @@ body {
 }
 
 #idade #idade-num {
-  color: #1D3557;
+  color: #F1FAEE;
   text-align: center;
   width: 50px;
   padding: 5px;
   border-radius: 30px;
-  background-color: #A8DADC;
+  background-color: #52b69a;
 }
 
 /* Nav Bar */
@@ -48,7 +53,7 @@ body {
 }
 
 .nav-bar {
-  top: 150px;
+  top: 155px;
   z-index: 999;
 }
 
@@ -68,12 +73,12 @@ li a {
   position: relative;
   cursor: pointer;
   padding: 10px;
-  color: black;
+  color: #52b69a;
 }
 
 li a::before {
   content: "";
-  background-color: #457B9D;
+  background-color: #52b69a;
   display: block;
   position: absolute;
   border-top-left-radius: 30px;
@@ -102,10 +107,28 @@ li a:active {
 /* About Me */
 #about-me {
   height: 100vh;
-  padding: 40px;
+  margin-top: 35px; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   transition: Transform 150ms ease-in;
+}
+
+.about-me-content:nth-child(1) {
+  text-align: justify;
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  flex-direction: column;
+  color: #F1FAEE;;
+  /* border: 1px solid red; */
+}
+
+.about-me-content:nth-child(2) {
+  text-align: justify;
+  width: 100%;
+  font-size: 1.5em;
+  color: #F1FAEE;
+  /* border: 1px solid red; */
 }
 
 #about-me .wrapper {
@@ -117,8 +140,8 @@ li a:active {
 
 #about-me .wrapper .static-text {
   color: #F1FAEE;
-  font-size: 3.5em;
-  font-weight: 400;
+  font-size: 4em;
+  font-weight: bold;
 }
 
 .dynamic-texts {
@@ -131,11 +154,11 @@ li a:active {
   color: #52b69a;
   position: relative;
   top: 0;
-  left: -15px;
+  left: -25px;
   list-style: none;
-  font-size: 3em;
-  font-weight: 500;
-  animation: slide 6s steps(4) infinite;
+  font-size: 3.5em;
+  font-weight: bold;
+  animation: slide 12s steps(4) infinite;
 }
 
 @keyframes slide {
@@ -157,7 +180,7 @@ li a:active {
   height: 100%;
   width: 100%;
   border-left: 2px solid #52b69a;
-  animation: typing 1.5s steps(20) infinite;
+  animation: typing 3s steps(25) infinite;
 }
 
 @keyframes typing {
@@ -175,18 +198,4 @@ li a:active {
   filter: brightness(1.1);
   border-radius: 50%;
   filter: drop-shadow(0 0 10px #F1FAEE);
-}
-
-.about-me-content:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me-content:nth-child(2) {
-  text-align: justify;
-  width: 80%;
-  font-size: 1.5em;
-  color: #F1FAEE;
-  position: relative;
-  right: 5vw;
 }
