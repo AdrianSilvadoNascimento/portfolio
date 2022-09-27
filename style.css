@@ -36,6 +36,15 @@ body {
   font-size: 1.5em;
 }
 
+#idade-popup {
+  display: none;
+  padding: 8px;
+  font-size: .8em;
+  border-radius: 15px;
+  background-color: #F1FAEE;
+  color:#52b69a;
+}
+
 #idade #idade-num {
   color: #F1FAEE;
   text-align: center;
@@ -198,4 +207,23 @@ li a:active {
   filter: brightness(1.1);
   border-radius: 50%;
   filter: drop-shadow(0 0 10px #F1FAEE);
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact form {
+  width: 50vw;
+}
+
+#contact form input {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }

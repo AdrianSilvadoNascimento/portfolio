@@ -1,0 +1,40 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.header {
+  background-color: #2b2d42;
+
+  .header-bar {
+    border-bottom: 3px solid #52b69a;
+  }
+
+  nav {
+    width: 90%;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 0 5vw;
+      }
+    }
+  }
+}
+
+#my-name {
+  font-size: 1.5em;
+  color: #F1FAEE;
+  font-weight: bold;
+}
+
+#idade {
+  font-size: 1.2em;
+  color: #F1FAEE;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 30px;
+  background-color: #52b69a;
+  cursor: pointer;
+}
