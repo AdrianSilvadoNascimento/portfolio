@@ -1,0 +1,27 @@
+section {
+  mat-card {
+    width: 50%;
+    margin: 0 auto;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      mat-form-field {
+        width: 100%;
+        textarea {
+          resize: none;
+        }
+
+      }
+      button {
+        width: 5vw;
+        align-self: flex-end;
+        background-color: #52b69a;
+        color: #F1FAEE;
+      }
+    }
+  }
+}

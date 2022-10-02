@@ -1,10 +1,10 @@
 <mat-toolbar class="header">
   <mat-toolbar-row class="header-bar">
-    <h2 id="my-name">Adrian Silva</h2>
+    <a routerLinke="/"><h2 id="my-name">Adrian Silva</h2></a>
     <span class="spacer"></span>
     <span
       id="idade"
-      matTooltip="Experiência para o próximo nível: 80/100"
+      matTooltip="Experiência para o próximo nível: 90/100"
       matTooltipPosition="left"
       >
       20
@@ -14,7 +14,7 @@
     <nav>
       <ul>
         <li>
-          <a href="#about-me">Sobre Mim</a>
+          <a [routerLink]="'/about-me'">Sobre Mim</a>
         </li>
         <li>
           <a href="#projects">Portfólio</a>

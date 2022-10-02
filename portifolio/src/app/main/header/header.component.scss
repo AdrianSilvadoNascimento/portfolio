@@ -5,6 +5,23 @@
 .header {
   background-color: #2b2d42;
 
+  #my-name {
+    font-size: 1.7em;
+    color: #F1FAEE;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+
+  #idade {
+    font-size: 1.2em;
+    color: #F1FAEE;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 30px;
+    background-color: #52b69a;
+    cursor: pointer;
+  }
+
   .header-bar {
     border-bottom: 3px solid #52b69a;
   }
@@ -15,26 +32,43 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      list-style: none;
 
       li {
         margin: 0 5vw;
+
+        a {
+          text-decoration: none;
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+          padding: 10px;
+          color: #52b69a;
+          z-index: 5;
+        }
+
+        a::before {
+          content: "";
+          background-color: #52b69a;
+          display: block;
+          position: absolute;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          inset: 0;
+          z-index: -1;
+          transition: transform 250ms ease;
+          transform-origin: right;
+          transform: scaleX(0);
+        }
+        a:hover::before {
+          transform: scaleX(1);
+        }
+
+        a:hover {
+          transition: transform 250ms ease;
+          color: #F1FAEE;
+        }
       }
     }
   }
-}
-
-#my-name {
-  font-size: 1.5em;
-  color: #F1FAEE;
-  font-weight: bold;
-}
-
-#idade {
-  font-size: 1.2em;
-  color: #F1FAEE;
-  text-align: center;
-  padding: 0 10px;
-  border-radius: 30px;
-  background-color: #52b69a;
-  cursor: pointer;
 }
