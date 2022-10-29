@@ -5,6 +5,12 @@
 .header {
   background-color: #2b2d42;
 
+  .menu-mobile {
+    color: #fff;
+    display: none;
+    transition: 0.5s ease-in;
+  }
+
   #my-name {
     font-size: 1.7em;
     color: #F1FAEE;
@@ -26,8 +32,10 @@
     border-bottom: 3px solid #52b69a;
   }
 
-  nav {
+  nav.menu {
     width: 90%;
+    display: block;
+    transition: 0.5s ease-out;
     ul {
       display: flex;
       justify-content: center;
@@ -69,6 +77,20 @@
           color: #F1FAEE;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    #my-name {
+      margin-left: 0;
+    }
+    nav.menu {
+      display: none;
+    }
+    .menu-mobile {
+      display: block;
     }
   }
 }
