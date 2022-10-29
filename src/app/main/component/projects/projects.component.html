@@ -1,45 +1,19 @@
-<section class="section">
-  <article class="side-nav">
-    <div class="project-link">
-      <a href="">E-shop</a>
-      <div class="liner"></div>
-    </div>
-    <div class="project-link">
-      <a href="">Delivery Food</a>
-      <div class="liner"></div>
-    </div>
-    <div class="project-link">
-      <a href="">Calendar.io</a>
-      <div class="liner"></div>
-    </div>
-    <div class="project-link">
-      <a href="">Gerenciamento Financeiro</a>
-      <div class="liner"></div>
-    </div>
-    <div class="project-link">
-      <a href="">Notícias-Cidade</a>
-      <div class="liner"></div>
-    </div>
-  </article>
-  <article class="project-description">
-    <div class="image">
-      <img
-        src="https://github.com/AdrianSilvadoNascimento/EShop/blob/master/images/imagesParaReadme/pagina-inicial-lg.png?raw=true"
-        alt="Imagem da tela inicial do projeto">
-    </div>
-    <div class="description-background">
-      <h2>Título do Projeto</h2>
-      <h3>Finalidade</h3>
-      <h3>Tecnologias Utilizadas</h3>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was popularised in the
-        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+<section>
+  <article>
+    <div class="background">
+      <div class="projects" *ngFor="let project of projects">
+        <a href="">
+          <img
+          [src]="project.image"
+          alt="{{ project.resume }}">
+          <h2>Título: {{ project.title }}</h2>
+          <p class="text eli">
+            <span class="text-concat">
+              {{ project.resume }}
+            </span>
+          </p>
+        </a>
+      </div>
     </div>
   </article>
 </section>
