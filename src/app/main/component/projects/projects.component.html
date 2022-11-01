@@ -2,7 +2,7 @@
   <article>
     <div class="background">
       <div class="projects" *ngFor="let project of projects">
-        <a href="">
+        <a [routerLink]="[project.id]">
           <img
           [src]="project.image"
           alt="{{ project.resume }}">

@@ -1,1 +1,9 @@
-<p>project-description works!</p>
+<section *ngFor="let selected of project">
+  <article class="image">
+    <img [src]="selected.image" alt="">
+  </article>
+  <article class="description">
+    <h2>Título: <span>{{ selected.title }}</span></h2>
+    <p>Descrição: {{ selected.resume }}</p>
+  </article>
+</section>

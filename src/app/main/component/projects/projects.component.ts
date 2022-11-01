@@ -25,12 +25,12 @@ export class ProjectsComponent implements OnInit {
       image: 'https://github.com/AdrianSilvadoNascimento/EShop/blob/master/images/imagesParaReadme/pagina-inicial-lg.png?raw=true'
     },
     {
-      id: 1, title: 'E-shop',
+      id: 3, title: 'E-shop',
       resume: 'Um projeto de loja virtual',
       image: 'https://github.com/AdrianSilvadoNascimento/EShop/blob/master/images/imagesParaReadme/pagina-inicial-lg.png?raw=true'
     },
     {
-      id: 2, title: 'Calculadora de Gorjetas',
+      id: 4, title: 'Calculadora de Gorjetas',
       // resume: 'Estudo de caso onde criei uma calculadora de gorjetas',
       resume: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -42,12 +42,12 @@ export class ProjectsComponent implements OnInit {
       image: 'https://github.com/AdrianSilvadoNascimento/EShop/blob/master/images/imagesParaReadme/pagina-inicial-lg.png?raw=true'
     },
     {
-      id: 1, title: 'E-shop',
+      id: 5, title: 'E-shop',
       resume: 'Um projeto de loja virtual',
       image: 'https://github.com/AdrianSilvadoNascimento/EShop/blob/master/images/imagesParaReadme/pagina-inicial-lg.png?raw=true'
     },
     {
-      id: 2, title: 'Calculadora de Gorjetas',
+      id: 6, title: 'Calculadora de Gorjetas',
       // resume: 'Estudo de caso onde criei uma calculadora de gorjetas',
       resume: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
