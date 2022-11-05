@@ -30,12 +30,20 @@
 
   .header-bar {
     border-bottom: 3px solid #52b69a;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   nav.menu {
     width: 90%;
     display: block;
     transition: 0.5s ease-out;
+    margin: 0 auto;
+    border-bottom: 3.5px solid #52b69a;
+    line-height: 1.5px;
+
     ul {
       display: flex;
       justify-content: center;
@@ -91,6 +99,7 @@
     }
     .menu-mobile {
       display: block;
+      border-bottom: 2px solid #52b69a;
     }
   }
 }

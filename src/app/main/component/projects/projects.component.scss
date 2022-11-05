@@ -2,13 +2,13 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 20px;
   border-radius: 10px;
   width: 65%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: #52b69a;
+  border: 2px solid #fff;
   padding: 0 15px;
 
   .projects {
@@ -21,7 +21,7 @@
     margin: 15px 0;
 
     &:hover {
-      filter: drop-shadow(0 15px 10px rgba(0, 0, 0, .5));
+      filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.5));
     }
 
     a {

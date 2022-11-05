@@ -1,0 +1,143 @@
+section {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  height: 50vh;
+
+  .me, .my-image {
+    width: 50%;
+    transition: 0.5s ease;
+  }
+
+  .me {
+    width: 50%;
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+
+      .colorir {
+        color:#52b69a;
+      }
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1, h2 {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    ul {
+      position: relative;
+      top: 200px;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-around;
+      margin: 0 auto;
+      padding: 0;
+
+      li {
+        &:hover {
+          a {
+            color: #52b69a;
+          }
+        }
+        &:active {
+          a {
+            color: #52b69a;
+            text-decoration: underline;
+          }
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+          margin-top: 10px;
+          transition: 0.2s ease-in;
+
+          img {
+            margin: 10px auto;
+            width: 50px;
+            filter: drop-shadow(2px 4px 0.5px rgba(#52b69a, 0.5));
+            transition: ease-in;
+          }
+
+          &:hover {
+            img {
+              transform: translateY(-15px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  section {
+    display: block;
+    height: 80%;
+
+    .me {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      ul {
+        position: relative;
+        top: 100px;
+        justify-content: space-between;
+      }
+
+      h1 {
+        line-height: 100%;
+      }
+    }
+    .my-image {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    display: flex;
+
+    .me, .my-image {
+      width: 50%;
+
+    }
+    .me {
+      width: 50%;
+      position: relative;
+      left: 0;
+
+      h1, h2 {
+        position: relative;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50% -30%);
+      }
+
+      ul {
+        position: relative;
+        left: 50%;
+        top: 200px;
+      }
+    }
+    .my-image {
+      display: block;
+    }
+  }
+}
