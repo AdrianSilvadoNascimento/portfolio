@@ -1,5 +1,5 @@
 {
-  "name": "portifolio",
+  "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,6 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "build:prod": "ng build --prod --base-href /portifolio",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
   },
   "private": true,
   "dependencies": {
