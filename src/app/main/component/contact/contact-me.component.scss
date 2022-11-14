@@ -9,6 +9,13 @@ section {
       justify-content: center;
       align-items: center;
 
+      .header-card {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
       mat-form-field {
         width: 100%;
         textarea {
@@ -21,6 +28,22 @@ section {
         align-self: flex-end;
         background-color: #52b69a;
         color: #F1FAEE;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 480px) {
+  section {
+    mat-card {
+      width: 80%;
+    }
+    form {
+      .header-card {
+        flex-direction: column;
+      }
+      button {
+        width: 10vw;
       }
     }
   }
