@@ -1,21 +1,23 @@
 <section id="contact">
   <mat-card>
     <form>
-      <mat-form-field class="inputs" appearance="outline">
-        <mat-label>Nome</mat-label>
-        <input matInput type="text" placeholder="Nome">
-      </mat-form-field>
-      <mat-form-field class="inputs" appearance="outline">
-        <mat-label>Email</mat-label>
-        <input matInput type="email" placeholder="Email">
-      </mat-form-field>
+      <article class="header-card">
+        <mat-form-field class="inputs" appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput type="text" minlength="3" maxlength="60" placeholder="Nome">
+        </mat-form-field>
+        <mat-form-field class="inputs" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="Email">
+        </mat-form-field>
+      </article>
       <mat-form-field class="inputs" appearance="outline">
         <mat-label>Assunto</mat-label>
-        <input matInput type="text" placeholder="Assunto">
+        <input matInput type="text" minlength="3" placeholder="Assunto">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Descrição</mat-label>
-        <textarea matInput placeholder="Descrição"></textarea>
+        <textarea matInput placeholder="Descrição" maxlength="2000" rows="10"></textarea>
       </mat-form-field>
       <button mat-raised-button>
         Enviar
