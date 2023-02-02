@@ -1,16 +1,66 @@
 <mat-toolbar class="header">
   <mat-toolbar-row class="header-bar">
-    <a [routerLink]="'about-me'"><h2 id="my-name">Adrian Silva</h2></a>
-    <span class="spacer"></span>
+    <a [routerLink]="'about-me'">
+      <!-- <h2 id="my-name">Adrian Silva</h2> -->
+      <img class="profile-header" src="../../../assets/images/profile-min.jfif" alt="profile">
+    </a>
     <span
       id="idade"
-      matTooltip="Experiência para o próximo nível: 90/100"
-      matTooltipPosition="left"
+      matTooltip="Esta é a minha idade"
+      matTooltipPosition="right"
       >
-      20
+      21
     </span>
+    <nav class="menu">
+      <ul class="links">
+        <li>
+          <a routerLink="/about-me">Sobre Mim</a>
+        </li>
+        <li>
+          <a routerLink="/projects">Portfólio</a>
+        </li>
+        <li>
+          <a routerLink="/contact">Entre em Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button mat-button class="menu-mobile" [matMenuTriggerFor]="menu">
+      <mat-icon class="mat-18">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </mat-icon>
+
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/about-me">Sobre Mim</button>
+      <button mat-menu-item routerLink="/projects">Portfólio</button>
+      <button mat-menu-item routerLink="/contact">Entre em Contato</button>
+    </mat-menu>
+
+    <ul class="icons">
+      <li>
+        <a href="https://github.com/AdrianSilvadoNascimento" target="_blank">
+          <img src="../../../../assets/images/github.png" alt="Github Icon">
+          <!-- Github -->
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/adrian-silva-do-nascimento-6b4520200/" target="_blank">
+          <img src="../../../../assets/images/linkedin.png" alt="LinkedIn Icon">
+          <!-- LinkedIn -->
+        </a>
+      </li>
+      <li>
+        <a href="https://api.whatsapp.com/send?phone=5581999273732&text=Ol%C3%A1!%20Vi%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA!" target="_blank">
+          <img src="../../../../assets/images/whatsapp.webp" alt="Whatsapp Icon">
+          <!-- Whatsapp -->
+        </a>
+      </li>
+    </ul>
   </mat-toolbar-row>
-  <mat-toolbar-row>
+  <!-- <mat-toolbar-row>
     <nav class="menu">
       <ul>
         <li>
@@ -23,19 +73,19 @@
           <a routerLink="/contact">Entre em Contato</a>
         </li>
       </ul>
-  </nav>
-  <button mat-button class="menu-mobile" [matMenuTriggerFor]="menu">
-    <mat-icon class="mat-18">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-      </svg>
-    </mat-icon>
+    </nav>
+    <button mat-button class="menu-mobile" [matMenuTriggerFor]="menu">
+      <mat-icon class="mat-18">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </mat-icon>
 
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/about-me">Sobre Mim</button>
-    <button mat-menu-item routerLink="/projects">Portfólio</button>
-    <button mat-menu-item routerLink="/contact">Entre em Contato</button>
-  </mat-menu>
-  </mat-toolbar-row>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/about-me">Sobre Mim</button>
+      <button mat-menu-item routerLink="/projects">Portfólio</button>
+      <button mat-menu-item routerLink="/contact">Entre em Contato</button>
+    </mat-menu>
+  </mat-toolbar-row> -->
 </mat-toolbar>
