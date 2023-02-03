@@ -9,7 +9,7 @@
       matTooltip="Esta é a minha idade"
       matTooltipPosition="right"
       >
-      21
+      {{years}}
     </span>
     <nav class="menu">
       <ul class="links">
@@ -60,32 +60,4 @@
       </li>
     </ul>
   </mat-toolbar-row>
-  <!-- <mat-toolbar-row>
-    <nav class="menu">
-      <ul>
-        <li>
-          <a routerLink="/about-me">Sobre Mim</a>
-        </li>
-        <li>
-          <a routerLink="/projects">Portfólio</a>
-        </li>
-        <li>
-          <a routerLink="/contact">Entre em Contato</a>
-        </li>
-      </ul>
-    </nav>
-    <button mat-button class="menu-mobile" [matMenuTriggerFor]="menu">
-      <mat-icon class="mat-18">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-        </svg>
-      </mat-icon>
-
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item routerLink="/about-me">Sobre Mim</button>
-      <button mat-menu-item routerLink="/projects">Portfólio</button>
-      <button mat-menu-item routerLink="/contact">Entre em Contato</button>
-    </mat-menu>
-  </mat-toolbar-row> -->
 </mat-toolbar>
